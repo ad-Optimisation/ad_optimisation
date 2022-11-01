@@ -9,4 +9,5 @@
 #   python scenario_generator.py <scenario_name>
 
 bucket_name = "10ac-batch-6"
-path = "data/w11/Challenge_Data.zip"
+from_path = "data/w11/Challenge_Data.zip"
+to_path = "data/Challenge_Data.zip"
