@@ -132,3 +132,6 @@ dmypy.json
 # data related ignores
 original_data/
 data/
+
+# vscode relted ignores
+.vscode/
