@@ -51,9 +51,9 @@ achieve that.
 the names suggest, the folder contains the asset image used to build the creatives and the CSV
 file contains the performance values for each creative. Each folder within the ‘Assets’ folder is a
 ‘game_id’ string value, and its reference performance is available in the CSV file.
-➢ Game_id - Represents a unique identifier of a creative for the performance values.
-➢ ER - Represents the engagement rate score of the creative.
-➢ CTR - Represents the click-through rate score of the creative.
+> ➢ Game_id - Represents a unique identifier of a creative for the performance values.
+> ➢ ER - Represents the engagement rate score of the creative.
+> ➢ CTR - Represents the click-through rate score of the creative.
 ## Requirements
 - Python > 3.5
 - Docker
@@ -87,4 +87,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 > Give us a ⭐ if you like this project, and also feel free to contact us at any moment.
 
-![Contributors list](https://contrib.rocks/image?repo=ad_optimisation/ad_optimisation)
+![Contributors list](https://contrib.rocks/image?repo=ad-Optimisation/ad_optimisation)
