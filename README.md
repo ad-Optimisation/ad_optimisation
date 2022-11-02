@@ -1,6 +1,7 @@
 # Computer Vision for Creative Optimisation: KPI maximisation through image analysis
+> Sample Dynamic creative optimisation
+
 ![](screen-shoot/programmatic-versus-dco.png)
-Please make sure to update the tests as appropriate.
 
 ## Project details
 
