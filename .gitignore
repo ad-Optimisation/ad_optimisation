@@ -56,7 +56,7 @@ coverage.xml
 *.pot
 
 # Django stuff:
-*.log
+# *.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -70,10 +70,9 @@ instance/
 
 # Sphinx documentation
 docs/_build/
-
+data/
 # PyBuilder
 target/
-
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -109,7 +108,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-/data
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -127,3 +125,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# data related ignores
+original_data/
+data/
+data
+
+# vscode relted ignores
+.vscode/
