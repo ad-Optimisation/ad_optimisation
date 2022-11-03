@@ -25,7 +25,7 @@ APP_FOLDER = defs.root_challenge_path + defs.root_assets_path
 
 def get_structure():
     """
-
+    A function that get the structure of a folder
     """
     totalFiles = 0
     totalDir = 0
@@ -57,12 +57,22 @@ def get_structure():
     print('Total:', (totalDir + totalFiles))
 
 
-def get_proper_structure():
-    print('get_proper_Structure')
-
-
 def get_files_name(directory:  str, filter_extension: list = None) -> list:
+    """
+    A function to get file names from a given directory
 
+    Parameters
+    =--------=
+    directory : str
+        The directory to search
+    filter_extension : list
+        A list of file extensions to filter
+
+    Returns
+    =-----=
+    list
+        A list of file names
+    """
     directory = f'{APP_FOLDER}/{directory}/'
 
     files = []
@@ -82,6 +92,9 @@ def get_files_name(directory:  str, filter_extension: list = None) -> list:
 
 
 def set_up_folder_structure():
+    """
+    A function to set up the structure of a folder
+    """
     df = pd.read_csv('observations/structure.csv')
 
     df['all_files'] = df.Assets.apply(lambda x: get_files_name(f'{x}/'))
