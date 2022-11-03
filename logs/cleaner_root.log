@@ -167,3 +167,13 @@
 ]
 [2022-11-03 12:08:07,579] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
 [2022-11-03 12:08:07,580] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 12:40:09,097] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 12:40:09,276] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 12:40:09,277] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 12:40:31,321] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 12:40:31,498] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 12:40:31,499] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
