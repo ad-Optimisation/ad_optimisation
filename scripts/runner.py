@@ -14,7 +14,10 @@ cp -r  "00dfe88c4d3fb60793765d314bf24b7c" ~/ad_optimization/data/
 import os
 import sys
 import defaults as defs
+import dataCleaner as ds
 import pandas as pd
+
+cleaner = ds.dataCleaner('runner script')
 
 sys.path.append('../observations/')
 APP_FOLDER = defs.root_challenge_path + defs.root_assets_path
@@ -80,13 +83,15 @@ def get_files_name(directory:  str, filter_extension: list = None) -> list:
 
 def set_up_folder_structure():
     df = pd.read_csv('observations/structure.csv')
-    # df.drop(columns=["Unnamed: 0.1", "Unnamed: 0"], axis=1)
 
     df['all_files'] = df.Assets.apply(lambda x: get_files_name(f'{x}/'))
 
     df['concat'] = df.all_files.apply(lambda x: " ".join(x))
     df.concat.str.contains("logo").value_counts()
 
+    df = cleaner.remove_unwanted_cols(df, ["Unnamed: 0.1", "Unnamed: 0"],
+                                      use_reg_ex=True)
+    # print(df.columns)
     df.to_csv('observations/structure.csv', index=False)
 
 
