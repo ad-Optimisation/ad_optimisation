@@ -87,7 +87,7 @@ def get_file_numbers(directory:  str, filter_extension: list = None) -> int:
 
     Returns
     =-----=
-    list
+    int
         A file number
     """
     directory = f'{APP_FOLDER}/{directory}/'
@@ -119,7 +119,7 @@ def set_up_folder_structure():
     df['all_files'] = df.Assets.apply(lambda x: get_files_name(f'{x}/'))
 
     df['concat'] = df.all_files.apply(lambda x: " ".join(x))
-    print('logo count: ', df.concat.str.contains("logo").value_counts())
+    print('logo count: \n', df.concat.str.contains("logo").value_counts())
 
     df = cleaner.remove_unwanted_cols(df, ["Unnamed: 0.1", "Unnamed: 0"],
                                       use_reg_ex=True)
