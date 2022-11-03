@@ -1,0 +1,13 @@
+[2022-11-03 08:46:56,486] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 08:46:56,561] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 08:46:56,562] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 08:48:09,125] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 08:48:44,967] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 08:48:45,042] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 08:48:45,043] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
