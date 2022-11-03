@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./notebooks/scripts",
+        "./notebooks/scripts"
+    ]
+}
