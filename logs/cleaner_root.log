@@ -1,0 +1,179 @@
+[2022-11-03 08:46:56,486] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 08:46:56,561] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 08:46:56,562] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 08:48:09,125] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 08:48:44,967] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 08:48:45,042] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 08:48:45,043] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 09:30:21,135] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 09:30:21,280] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 09:30:21,281] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 09:32:56,361] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 09:32:56,439] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 09:32:56,440] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 09:33:17,454] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 09:33:17,532] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 09:33:17,533] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 09:43:56,031] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 09:49:55,453] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 09:58:53,638] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 10:03:07,404] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 10:03:16,848] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 10:03:42,462] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 10:04:01,829] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 10:04:23,790] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 10:04:39,263] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 10:04:57,996] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 10:05:26,380] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 10:06:05,013] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:32:13,718] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:33:04,408] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:33:33,588] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:34:00,315] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:34:32,674] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:34:32,754] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 11:34:32,755] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 11:34:57,656] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:34:57,739] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 11:34:57,739] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 11:36:41,638] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:36:51,269] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:36:51,354] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 11:36:51,355] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 11:39:25,003] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:40:30,871] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:42:30,471] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:44:20,148] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:44:42,443] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:45:17,897] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:46:54,813] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:47:52,105] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:48:22,495] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:48:22,628] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 11:48:22,629] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 11:49:57,917] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:50:43,635] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:51:05,938] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:51:32,442] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:52:27,380] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:53:09,974] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:53:10,085] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 11:53:10,086] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 11:56:57,612] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:57:29,747] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:58:38,559] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:58:38,675] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 11:58:38,676] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 11:59:17,578] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 11:59:17,754] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 11:59:17,755] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 12:05:31,627] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 12:05:31,801] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 12:05:31,801] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 12:08:07,386] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 12:08:07,579] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 12:08:07,580] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 12:40:09,097] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 12:40:09,276] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 12:40:09,277] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 12:40:31,321] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for runner script    <--#####
+]
+[2022-11-03 12:40:31,498] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
+[2022-11-03 12:40:31,499] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
