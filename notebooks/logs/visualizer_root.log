@@ -3,3 +3,8 @@
 ]
 [2022-11-03 14:17:47,055] [dataVisualizer] [plot_count] [INFO] --> [setting up count plot]
 [2022-11-03 14:17:47,181] [dataVisualizer] [plot_count] [INFO] --> [number_of_files count plot plotted successfully]
+[2022-11-03 19:09:10,549] [dataVisualizer] [__init__] [INFO] --> [
+    #####-->    Data visualizer logger for initial observation    <--#####
+]
+[2022-11-03 19:09:17,605] [dataVisualizer] [plot_count] [INFO] --> [setting up count plot]
+[2022-11-03 19:09:17,736] [dataVisualizer] [plot_count] [INFO] --> [number_of_files count plot plotted successfully]
