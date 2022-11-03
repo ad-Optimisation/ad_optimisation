@@ -70,10 +70,9 @@ instance/
 
 # Sphinx documentation
 docs/_build/
-
+data/
 # PyBuilder
 target/
-
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -129,10 +128,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-
 # data related ignores
 original_data/
 data/
+data
 
 # vscode relted ignores
 .vscode/
