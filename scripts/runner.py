@@ -111,7 +111,7 @@ def extract_color_feature(directory: str) -> pd.DataFrame:
     try:
         for filename in os.listdir(f'{APP_FOLDER}{directory}'):
             f = os.path.join(f'{APP_FOLDER}{directory}', filename)
-            print('fn:', f)
+            # print('fn:', f)
             color_df = identify_color_composition(
                 f, tolerance=12, limit=12, visualize=False)
             color_df['Assets'] = directory
