@@ -60,4 +60,13 @@ cp -r  "00dfe88c4d3fb60793765d314bf24b7c" ~/ad_optimization/data/
 #                 # put your code here
 #                 print(content)
 import datetime
+import defaults as defs
+import dataCleaner as dc 
+cleaner = dc.dataCleaner('color feature extraction script')
+
+sys.path.append('../observations/')
+sys.path.append('../data/')
+APP_FOLDER = defs.root_challenge_path + defs.root_assets_path
+
+
 print(datetime.datetime.now())
