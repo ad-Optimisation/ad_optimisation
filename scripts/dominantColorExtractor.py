@@ -12,11 +12,11 @@ import extcolors
 import pandas as pd
 from PIL import Image
 import defaults as defs
-import dataCleaner as ds
+import dataCleaner as dc
 from colormap import rgb2hex
 from matplotlib import pyplot as plt
 
-cleaner = ds.dataCleaner('color feature extraction script')
+cleaner = dc.dataCleaner('color feature extraction script')
 
 sys.path.append('../observations/')
 sys.path.append('../data/')
