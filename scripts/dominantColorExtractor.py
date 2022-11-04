@@ -120,7 +120,8 @@ def color_to_df(extracted_colors: tuple) -> pd.DataFrame:
 
     df_color_up = [rgb2hex(int(i.split(", ")[0].replace("(", "")),
                            int(i.split(", ")[1]),
-                           int(i.split(", ")[2].replace(")", ""))) for i in df_rgb]
+                           int(i.split(", ")[2].replace(")", "")))
+                   for i in df_rgb]
 
     colors_df = pd.DataFrame(zip(df_color_up, df_rgb_values, df_percent),
                              columns=['c_code', 'rgb', 'occurrence'])
