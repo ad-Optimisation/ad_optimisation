@@ -4,7 +4,7 @@ import defaults as defs
 import dataCleaner as ds
 import pandas as pd
 
-cleaner = ds.dataCleaner('runner script')
+cleaner = ds.dataCleaner('structure finder script')
 
 sys.path.append('../observations/')
 APP_FOLDER = defs.root_challenge_path + defs.root_assets_path
