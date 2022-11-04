@@ -11,15 +11,14 @@ cp -r 'adunit-j&j-listerine-tonicadunit-instagram-bio-mob'
 cp -r  "00dfe88c4d3fb60793765d314bf24b7c" ~/ad_optimization/data/
 """
 
-from timeit import default_timer as timer
-import numpy as np
-from numba import jit, cuda
+# from timeit import default_timer as timer
+# import numpy as np
+# from numba import jit, cuda
 import sys
 import defaults as defs
 import dataCleaner as ds
 import pandas as pd
 import extcolors
-import pandas as pd
 from colormap import rgb2hex
 from matplotlib import pyplot as plt
 from PIL import Image
@@ -32,7 +31,7 @@ sys.path.append('../data/')
 APP_FOLDER = defs.root_challenge_path + defs.root_assets_path
 
 
-@jit(target_backend='cuda')
+# @jit(target_backend='cuda')
 def identify_color_composition(image,
                                tolerance: int = 12,
                                limit: int = 1,
@@ -76,7 +75,7 @@ def identify_color_composition(image,
     return identified_colors[:1]
 
 
-@jit(target_backend='cuda')
+# @jit(target_backend='cuda')
 def color_to_df(extracted_colors: tuple):
     """Converts RGB Color values from extcolors output to HEX Values."""
 
@@ -126,8 +125,8 @@ def extract_color_feature(directory: str) -> pd.DataFrame:
 
 perf_df = pd.read_csv('data/performance_data.csv')
 df = pd.DataFrame()
-for i in range(len(perf_df)):
-    # for i in range(1):
+# for i in range(len(perf_df)):
+for i in range(100):
     c_df = extract_color_feature(perf_df['game_id'][i])
     # c_df = extract_color_feature('adunit-ihop-window4-reeses-mob')
     # print("last", c_df)
