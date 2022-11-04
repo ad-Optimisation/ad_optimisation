@@ -40,7 +40,7 @@ def identify_color_composition(image,
     tolerance: int, optional
         Tolerance for the color composition.
         Defaults to 12.
-        limit: int, optional
+    limit: int, optional
         limit of the color extraction.
         Defaults to 1.
     visualize: bool, optional
@@ -66,7 +66,8 @@ def identify_color_composition(image,
     list_color = list(identified_colors['c_code'])
     list_percent = [int(i) for i in list(identified_colors['occurrence'])]
 
-    text_c = [c + ' ' + str(round(p*100/sum(list_percent), 1)) + '%' for c, p in zip(list_color, list_percent)]
+    text_c = [c + ' ' + str(round(p*100/sum(list_percent), 1)) +
+              '%' for c, p in zip(list_color, list_percent)]
     fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(100, 100), dpi=10)
     wedges, _ = ax[0].pie(list_percent,
                           labels=text_c,
