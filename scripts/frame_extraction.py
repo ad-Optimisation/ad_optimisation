@@ -18,3 +18,16 @@ class CreativeFrameExtractor:
     It requires a chrome webdriver compatible with selenium to be
     installed/included in the run environment path.
     '''
+def __init__(self, preview_url: str, 
+                 engagement_type: str, 
+                 save_location: str = '',
+                 browser_edges: Tuple[float, float] = (70, 1039)) -> None:
+        
+        self.preview_url = preview_url
+        self.engagement_type = engagement_type
+        self.browser_edges = browser_edges
+        self.file_name = '-'.join(preview_url.split('/')[-3:-1])
+        self.save_location = save_location
+        self.video_name = path.join(self.save_location, self.file_name)
+        self.cmd = f"ffmpeg -f gdigrab -draw_mouse 0 -framerate 60 -i desktop -vcodec libx264rgb {self.video_name}.mkv -y"
+        
