@@ -160,6 +160,7 @@ for i in range(len(perf_df)):
     # for i in range(100):
     c_df = extract_color_feature(perf_df['game_id'][i])
     df = pd.concat([df, c_df])
+    print(f'Extraction status: {(i/len(perf_df) * 100)}%')
 
 # save color composition
 df.to_csv('observations/color_feature.csv', index=False)
