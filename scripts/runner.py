@@ -59,5 +59,3 @@ cp -r  "00dfe88c4d3fb60793765d314bf24b7c" ~/ad_optimization/data/
 #             for content in contents:
 #                 # put your code here
 #                 print(content)
-
-
