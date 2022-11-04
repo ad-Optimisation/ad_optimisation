@@ -30,4 +30,46 @@ def __init__(self, preview_url: str,
         self.save_location = save_location
         self.video_name = path.join(self.save_location, self.file_name)
         self.cmd = f"ffmpeg -f gdigrab -draw_mouse 0 -framerate 60 -i desktop -vcodec libx264rgb {self.video_name}.mkv -y"
-        
+     
+        # Browser configuration
+        self.opt = Options()
+        self.opt.add_argument("--hide-scrollbars")
+        self.opt.add_experimental_option(
+            "excludeSwitches", ["enable-automation"])
+        # Browser Logs
+        self.capabilities = DesiredCapabilities.CHROME
+        self.capabilities["goog:loggingPrefs"] = {"browser": "ALL"}
+
+def is_status_complete(self, passed_driver) -> bool:
+        '''
+        Function to check status of the AD-Unit and its completion.
+        '''
+        # Retrieve logs from browser
+        logs = passed_driver.get_log("browser")
+
+        for log in logs:
+            # Select logs coming from AD-Unit
+            if log["source"] == "console-api":
+                # Extract message from log
+                message = log["message"]
+
+                if '"GAME CREATED"' in message or '"DROPPED"' in message:
+                    # Start Recording Game
+                    print("Starting Recording AD-UNIT...")
+                    print(log)
+                    return False
+
+                if '"START"' in message:
+                    # Engaged
+                    print("AD-UNIT Engaged...")
+                    print(log)
+                    return False
+
+                if '"GAME COMPLETE"' in message:
+                    # Stop Recording Game
+                    print("Stopped Recording AD-UNIT...")
+                    print(log)
+                    return True
+
+        return False
+         
