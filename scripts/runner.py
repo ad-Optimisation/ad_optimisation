@@ -172,13 +172,11 @@ def locate_image_on_image(directory: str, locate_image: str, on_image: str, pref
 
 df1 = locate_image_on_image('4c3bb41d4f40f39842b7b8d3f536366a',
                             'engagement_instruction.png',
-                            '_preview.png',
-                            prefix='eng_', visualize=True)
+                            '_preview.png', prefix='eng_', visualize=True)
 
 df2 = locate_image_on_image('fef95c5e1ee5bc235b56d7c508d3bcd0',
                             'engagement_instruction.png',
-                            '_preview.png',
-                            prefix='eng_', visualize=True)
+                            '_preview.png', prefix='eng_', visualize=True)
 
 print(df1)
 print(df2)
