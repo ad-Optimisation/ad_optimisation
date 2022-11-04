@@ -59,14 +59,35 @@ cp -r  "00dfe88c4d3fb60793765d314bf24b7c" ~/ad_optimization/data/
 #             for content in contents:
 #                 # put your code here
 #                 print(content)
+import sys
 import datetime
+import pandas as pd
 import defaults as defs
-import dataCleaner as dc 
-cleaner = dc.dataCleaner('color feature extraction script')
+import dataCleaner as dc
+
+
+cleaner = dc.dataCleaner('object extraction script')
 
 sys.path.append('../observations/')
 sys.path.append('../data/')
 APP_FOLDER = defs.root_challenge_path + defs.root_assets_path
 
 
-print(datetime.datetime.now())
+def extract_objects(col: str):
+    """
+    A function that extracts the objects from a given image
+    """
+
+
+print(f'started at: {datetime.datetime.now()}')
+perf_df = pd.read_csv('data/performance_data.csv')
+df = pd.DataFrame()
+for i in range(len(perf_df)):
+    # for i in range(100):
+    c_df = extract_objects(perf_df['game_id'][i])
+    df = pd.concat([df, c_df])
+    print(f'Extraction status: {round((i/len(perf_df) * 100), 1)}%')
+
+# save color composition
+df.to_csv('observations/object_feature.csv', index=False)
+print(f'ended at: {datetime.datetime.now()}')
