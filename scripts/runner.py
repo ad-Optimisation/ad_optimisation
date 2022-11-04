@@ -135,6 +135,11 @@ def locate_image_on_image(directory: str, locate_image: str, on_image: str, pref
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
             plt.imshow(image)
 
+        print({f'{prefix}top_left_pos': top_left,
+               f'{prefix}bottom_right_pos': bottom_right})
+        print(f'bot left x: {bottom_right[0]} type: {type(bottom_right)}',
+              f'bot left y: {bottom_right[1]} type: {type(bottom_right[1])}')
+
         # create dataframe, add position data and return
         last_df['Assets'] = directory
         last_df['located_image'] = locate_image
@@ -146,10 +151,6 @@ def locate_image_on_image(directory: str, locate_image: str, on_image: str, pref
         last_df['height'] = height
         last_df['width'] = width
 
-        print({f'{prefix}top_left_pos': top_left,
-               f'{prefix}bottom_right_pos': bottom_right})
-        print(f'top left x: {top_left[0]} type: {type(top_left)}',
-              f'top left y: {top_left[1]} type: {type(top_left[1])}')
         print(f'df: {last_df}\ntype: {type(last_df)}')
         return last_df
 
@@ -177,6 +178,3 @@ df1 = locate_image_on_image('4c3bb41d4f40f39842b7b8d3f536366a',
 df2 = locate_image_on_image('fef95c5e1ee5bc235b56d7c508d3bcd0',
                             'engagement_instruction.png',
                             '_preview.png', prefix='eng_', visualize=True)
-
-print(df1)
-print(df2)
