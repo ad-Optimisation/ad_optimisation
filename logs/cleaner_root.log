@@ -474,3 +474,9 @@
 [2022-11-04 10:49:22,824] [dataCleaner] [__init__] [INFO] --> [
     #####-->    Data cleaner logger for structure finder script    <--#####
 ]
+[2022-11-04 12:14:39,264] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for color feature extraction script    <--#####
+]
+[2022-11-04 12:17:57,695] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for color feature extraction script    <--#####
+]

@@ -5,15 +5,16 @@ A starter script for color feature extraction
 # from timeit import default_timer as timer
 # import numpy as np
 # from numba import jit, cuda
+import os
 import sys
+import datetime
+import extcolors
+import pandas as pd
+from PIL import Image
 import defaults as defs
 import dataCleaner as ds
-import pandas as pd
-import extcolors
 from colormap import rgb2hex
 from matplotlib import pyplot as plt
-from PIL import Image
-import os
 
 cleaner = ds.dataCleaner('color feature extraction script')
 
@@ -58,8 +59,7 @@ def identify_color_composition(image,
     list_color = list(identified_colors['c_code'])
     list_percent = [int(i) for i in list(identified_colors['occurrence'])]
 
-    text_c = [c + ' ' + str(round(p*100/sum(list_percent), 1)) + '%' for c, p in zip(list_color,
-                                                                                     list_percent)]
+    text_c = [c + ' ' + str(round(p*100/sum(list_percent), 1)) + '%' for c, p in zip(list_color, list_percent)]
     fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(100, 100), dpi=10)
     wedges, _ = ax[0].pie(list_percent,
                           labels=text_c,
@@ -153,12 +153,14 @@ def extract_color_feature(directory: str) -> pd.DataFrame:
         return last_df
 
 
+print(f'started at: {datetime.datetime.now()}')
 perf_df = pd.read_csv('data/performance_data.csv')
 df = pd.DataFrame()
-# for i in range(len(perf_df)):
-for i in range(100):
+for i in range(len(perf_df)):
+    # for i in range(100):
     c_df = extract_color_feature(perf_df['game_id'][i])
     df = pd.concat([df, c_df])
 
 # save color composition
 df.to_csv('observations/color_feature.csv', index=False)
+print(f'ended at: {datetime.datetime.now()}')
