@@ -27,7 +27,8 @@ APP_FOLDER = defs.root_challenge_path + defs.root_assets_path
 def identify_color_composition(image,
                                tolerance: int = 12,
                                limit: int = 1,
-                               visualize: bool = False) -> pd.DataFrame:
+                               visualize: bool = False,
+                               maxDominantColors: int = 1) -> pd.DataFrame:
     """
     Function that identifies the color composition of a
     given image path.
@@ -39,9 +40,15 @@ def identify_color_composition(image,
     tolerance: int, optional
         Tolerance for the color composition.
         Defaults to 12.
+        limit: int, optional
+        limit of the color extraction.
+        Defaults to 1.
     visualize: bool, optional
         Whether to visualize the color composition.
         Defaults to False.
+    maxDominantColors: int, optional
+        Maximum number of dominant colors to return.
+        Defaults to 1.
 
     Returns
     =-----=
@@ -80,7 +87,7 @@ def identify_color_composition(image,
 
     plt.show()
 
-    return identified_colors[:1]
+    return identified_colors[:maxDominantColors]
 
 
 # @jit(target_backend='cuda')
