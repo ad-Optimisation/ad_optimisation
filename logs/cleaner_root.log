@@ -177,3 +177,324 @@
 ]
 [2022-11-03 12:40:31,498] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0.1 removed successfully]
 [2022-11-03 12:40:31,499] [dataCleaner] [remove_unwanted_cols] [INFO] --> [feature: Unnamed: 0 removed successfully]
+[2022-11-03 18:43:38,921] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:44:18,994] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:46:10,055] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:46:26,892] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:49:13,745] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:49:29,871] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:49:40,298] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:49:49,628] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:50:41,695] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:51:49,066] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:53:20,371] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:53:49,752] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:54:10,846] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:57:27,283] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:57:45,719] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:59:04,819] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:59:22,716] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 18:59:45,002] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:00:16,270] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:01:58,614] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:17:53,106] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:18:39,725] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:22:55,833] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:23:24,294] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:24:04,575] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:27:20,191] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:27:59,585] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:29:11,441] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:29:28,555] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:30:44,839] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:31:07,694] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:31:24,979] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:32:25,833] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:32:47,160] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:34:44,911] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:39:03,085] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:39:58,710] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:41:26,197] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:42:05,954] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:45:47,308] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:45:57,959] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:46:24,232] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:46:58,559] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:50:02,589] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:51:05,949] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:51:43,370] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:52:07,855] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:52:15,558] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:53:05,379] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:53:24,109] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:53:28,975] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:54:11,117] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:54:45,287] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:55:50,775] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:56:51,326] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:57:29,017] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:57:48,507] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:57:57,070] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:58:04,660] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:58:27,818] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 19:59:16,631] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:01:03,204] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:03:02,425] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:03:55,292] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:04:49,058] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:06:06,627] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:06:49,678] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:07:10,431] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:08:07,659] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:15:18,859] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:21:25,936] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:22:11,314] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:22:27,124] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:31:19,884] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:36:57,042] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 20:37:48,610] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:02:10,686] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:03:56,268] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:04:05,046] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:04:43,262] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:05:44,809] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:06:32,071] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:06:48,179] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:21:20,854] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:22:35,577] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:22:58,521] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:23:32,389] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:24:01,247] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:25:22,192] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:26:08,883] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:26:28,532] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:26:54,710] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:27:32,549] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:28:09,541] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:28:39,082] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:29:57,441] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:39:48,496] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-03 21:42:46,971] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-04 10:49:22,824] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for structure finder script    <--#####
+]
+[2022-11-04 12:14:39,264] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for color feature extraction script    <--#####
+]
+[2022-11-04 12:17:57,695] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for color feature extraction script    <--#####
+]
+[2022-11-04 13:28:17,367] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for object extraction script    <--#####
+]
+[2022-11-04 13:29:07,864] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for object extraction script    <--#####
+]
+[2022-11-04 13:29:31,098] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for object extraction script    <--#####
+]
+[2022-11-04 13:29:40,852] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for object extraction script    <--#####
+]
+[2022-11-04 13:30:06,199] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for object extraction script    <--#####
+]
+[2022-11-04 13:36:43,824] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for object extraction script    <--#####
+]
