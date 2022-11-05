@@ -24,7 +24,11 @@ def locate_image_on_image(directory: str, locate_image: str, on_image: str,
                           prefix: str = '', visualize: bool = False,
                           color: Tuple[int, int, int] = (0, 0, 255)) -> pd.DataFrame:
     """
+<<<<<<< HEAD
     Locate an image in an image
+=======
+    Locate an image within an image
+>>>>>>> fead5712e2dcd995402e3154ebbc947029827d10
 
     Parameters
     =--------=
