@@ -117,3 +117,4 @@ class Text_Extraction:
                 f'Failure: Tesseract is not installed or not available in the defined path {tesseract_cmd}')
  
 
+    
