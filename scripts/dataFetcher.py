@@ -1,3 +1,7 @@
+"""
+A script for fetching and extracting data
+"""
+
 import boto3
 import zipfile
 import defaults as defs
