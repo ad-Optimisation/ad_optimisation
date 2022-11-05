@@ -24,11 +24,7 @@ def locate_image_on_image(directory: str, locate_image: str, on_image: str,
                           prefix: str = '', visualize: bool = False,
                           color: Tuple[int, int, int] = (0, 0, 255)) -> pd.DataFrame:
     """
-<<<<<<< HEAD
-    Locate an image in an image
-=======
     Locate an image within an image
->>>>>>> fead5712e2dcd995402e3154ebbc947029827d10
 
     Parameters
     =--------=
@@ -119,8 +115,7 @@ df = pd.DataFrame()
 # for i in range(100):
 for i in range(len(perf_df)):
     c_df = locate_image_on_image(perf_df['game_id'][i],
-                                 'cta',
-                                 '_preview.png', prefix='eng_')
+                                 'cta', '_preview.png', prefix='eng_')
     df = pd.concat([df, c_df])
     print(f'Extraction status: {round((i/len(perf_df) * 100), 1)}%')
 
