@@ -2,13 +2,11 @@
 import os.path
 from os import path
 import glob
-#colors
 import extcolors
 import pandas as pd
 from colormap import rgb2hex
 from matplotlib import pyplot as plt
 from PIL import Image
-# text extraction lib
 import pytesseract
 import cv2
 import numpy as np
