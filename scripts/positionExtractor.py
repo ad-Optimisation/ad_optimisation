@@ -58,9 +58,12 @@ def locate_image_on_image(directory: str, locate_image: str, on_image: str,
     match_count = 0
     match_count_list = []
     try:
+        print(f'inside: {directory}')
         for filename in os.listdir(f'{APP_FOLDER}{directory}'):
             print(f'current file name: {filename}')
-            if locate_image in filename:
+            if locate_image in filename.lower():
+                if 'mp4' in filename.lower():
+                    continue 
                 locate_image_ = filename
                 print(f'found match: {locate_image_}')
                 match_count += 1
@@ -113,11 +116,11 @@ df = pd.DataFrame()
 # for i in range(100):
 for i in range(len(perf_df)):
     c_df = locate_image_on_image(perf_df['game_id'][i],
-                                 'engagement',
+                                 'cta',
                                  '_preview.png', prefix='eng_')
     df = pd.concat([df, c_df])
     print(f'Extraction status: {round((i/len(perf_df) * 100), 1)}%')
 
-# save engagement position composition
-df.to_csv('observations/engagement_position.csv', index=False)
+# save cta position composition
+df.to_csv('observations/cta_position.csv', index=False)
 print(f'ended at: {datetime.datetime.now()}')
