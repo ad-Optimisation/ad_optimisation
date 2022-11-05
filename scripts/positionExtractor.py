@@ -24,7 +24,7 @@ def locate_image_on_image(directory: str, locate_image: str, on_image: str,
                           prefix: str = '', visualize: bool = False,
                           color: Tuple[int, int, int] = (0, 0, 255)) -> pd.DataFrame:
     """
-    Locate an image on a directory
+    Locate an image in an image
 
     Parameters
     =--------=
@@ -44,7 +44,6 @@ def locate_image_on_image(directory: str, locate_image: str, on_image: str,
 
     Returns
     =-----=
-
     last_df: pandas dataframe
         A data frame containing position information
     """
