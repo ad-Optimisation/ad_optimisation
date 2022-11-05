@@ -1,4 +1,5 @@
 # Computer Vision for Creative Optimisation: KPI maximisation through image analysis
+
 > Sample Dynamic creative optimisation
 
 ![](screen-shoot/programmatic-versus-dco.png)
@@ -27,14 +28,19 @@
 - Adludio has been running a huge number of commercials, and each one has a unique Creative. These designs were produced based on the designers' prior work and the requirements of the business. There is no way to assess creatives during production and predict how well they might perform once they are served. Adludio aims to address this issue by creating an algorithm that enables it to optimize its creatives in light of campaign performance information. We are entrusted with creating a computer vision system based on deep learning that separates items from creative assets and associates them with KPI criteria of the related campaigns in order to achieve that.
 
 ## Data
+
 > The Dataset Archive is composed of an ‘Assets’ folder and a ‘performance_data’ CSV file. As the names suggest, the folder contains the asset image used to build the creatives and the CSV file contains the performance values for each creative. Each folder within the ‘Assets’ folder is a ‘game_id’ string value, and its reference performance is available in the CSV file.
--  Game_id - Represents a unique identifier of a creative for the performance values.
+
+- Game_id - Represents a unique identifier of a creative for the performance values.
 - ER - Represents the engagement rate score of the creative.
 - CTR - Represents the click-through rate score of the creative.
+
 ## Requirements
+
 - Python > 3.5
 - Docker
 - pip install -r requirements.txt
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install OpenCV.
@@ -56,9 +62,36 @@ pip install opencv-python
 > All the scripts and modules used for this project relating to interactions with kafka, airflow, and other frameworks along with default parameters and values used will be found here, in the scripts folder.
 
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-> 👤 **
+> 👤 **Birhanu Gebisa**
+>
+> - [Email](mailto:birhanugebisa@gmail.com), [GitHub](https://github.com/BirhanuGebisa), [LinkedIn](https://www.linkedin.com/in/birhanu-gebisa2721/)
+
+> 👤 **Birtukan Kumma**
+>
+> - [Email](mailto:birtukankuma1113@gmail.com), [GitHub](https://github.com/BirtukanK), [LinkedIn](https://www.linkedin.com/in/)
+
+> 👤 **Fisseha Estifanos**
+>
+> - [Email](mailto:fisseha.137@gamil.com), [GitHub](https://github.com/fisseha-estifanos), [LinkedIn](https://www.linkedin.com/in/fisseha-estifanos-109ba6199/), [Twitter](https://twitter.com/f0x__tr0t)
+
+> 👤 **Kibatu Woldemariam**
+>
+> - [Email](mailto:kbkibatu@gmail.com), [GitHub](https://github.com/kebishaa), [LinkedIn](https://www.linkedin.com/in/)
+
+> 👤 **Margaret Chepkirui**
+>
+> - [Email](mailto:maggycheppy@gmail.com), [GitHub](https://github.com/MegCheppy), [LinkedIn](https://www.linkedin.com/in/)
+
+> 👤 **Nahom Habtemichael**
+>
+> - [Email](mailto:nahomhabtemichael@gmail.com), [GitHub](https://github.com/nahomHmichael), [LinkedIn](https://www.linkedin.com/in/)
+
+> 👤 **Yohanes Gutema**
+>
+> - [Email](mailto:yohgut@gmail.com), [GitHub](https://github.com/Yohanes-GR), [LinkedIn](https://www.linkedin.com/in/)
 
 ## Show us your support
 

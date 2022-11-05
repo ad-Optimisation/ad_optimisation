@@ -1,71 +1,6 @@
-# region: reference
-
-
 """
-cp -r 'adunit-j&j-listerine-tonicadunit-instagram-bio-mob'
-    'adunit-ihop-window4-scary-face-mpu' 'adunit-ihop-window4-scary-face-mob'
-    'adunit-ihop-window4-reeses-mpu' 'adunit-ihop-window4-reeses-mob'
-    'adunit-ihop-ihoppy-hour-save-dollar-5-mpu'
-    'adunit-ihop-ihoppy-hour-save-dollar-5-mob'
-    'adunit-ihop-ihoppy-hour-no-offer-mpu'
-    'adunit-ihop-ihoppy-hour-no-offer-mob' ~/ad_optimization/data/
-
-
-cp -r  "db69df88f5a7b1540d4ff829bffb97f9" ~/ad_optimization/data/
+A starter script for position extraction
 """
-
-# # to measure exec time
-
-# # normal function to run on cpu
-# def func(a):
-#     for i in range(10000000):
-#         a[i] += 1
-
-
-# # function optimized to run on gpu
-# @jit(target_backend='cuda')
-# def func2(a):
-#     for i in range(10000000):
-#         a[i] += 1
-
-
-# if __name__ == "__main__":
-#     n = 10000000
-#     a = np.ones(n, dtype=np.float64)
-
-#     start = timer()
-#     func(a)
-#     print("without GPU:", timer()-start)
-
-#     start = timer()
-#     func2(a)
-#     print("with GPU:", timer()-start)
-
-
-# for subdir, dirs, files in os.walk(APP_FOLDER):
-#     for file in files:
-#         print(os.path.join(subdir, file))
-
-# max_loop = 1
-# loop = 0
-# for subdir, dirs, files in os.walk(APP_FOLDER):
-#     loop += 1
-#     if loop > max_loop:
-#         break  # In order just to complete only one walkthrough
-#     for dir in dirs:
-#         dir_path = os.path.join(subdir, dir)
-#         color_dict = {}
-#         for _, d, contents in os.walk(dir_path):
-#             print(len(contents))
-#             # p.append(contents)
-#             print(contents)
-#             for content in contents:
-#                 # put your code here
-#                 print(content)
-
-
-# endregion
-
 
 import os
 import cv2
@@ -78,23 +13,41 @@ from typing import List, Tuple
 from matplotlib import pyplot as plt
 
 
-cleaner = dc.dataCleaner("development environment's runner script")
+cleaner = dc.dataCleaner('position extraction script')
 
 sys.path.append('../observations/')
 sys.path.append('../data/')
 APP_FOLDER = defs.root_challenge_path + defs.root_assets_path
 
 
-def extract_objects(col: str):
-    """
-    A function that extracts the objects from a given image
-    """
-
-
 def locate_image_on_image(directory: str, locate_image: str, on_image: str,
                           prefix: str = '', visualize: bool = False,
-                          color: Tuple[int, int, int] = (0, 0, 255)):
+                          color: Tuple[int, int, int] = (0, 0, 255)) -> pd.DataFrame:
+    """
+    Locate an image on a directory
 
+    Parameters
+    =--------=
+    directory: string
+        The path to the directory
+    locate_image: string
+        The path to the image to locate
+    on_image: string
+        The path to the base image to locate
+    prefix: string
+        The prefix
+        For printing purpose
+    visualize: bool
+        An indicator to visualize the image or not
+    color: tuple
+        The color of the visualizer box
+
+    Returns
+    =-----=
+
+    last_df: pandas dataframe
+        A data frame containing position information
+    """
     last_df = pd.DataFrame(columns=['Assets', 'located_image', 'base_image',
                                     'top_left_X', 'top_left_Y',
                                     'bottom_right_X', 'top_right_Y', 'height',
@@ -105,9 +58,12 @@ def locate_image_on_image(directory: str, locate_image: str, on_image: str,
     match_count = 0
     match_count_list = []
     try:
+        print(f'inside: {directory}')
         for filename in os.listdir(f'{APP_FOLDER}{directory}'):
             print(f'current file name: {filename}')
-            if locate_image in filename:
+            if locate_image in filename.lower():
+                if 'mp4' in filename.lower():
+                    continue
                 locate_image_ = filename
                 print(f'found match: {locate_image_}')
                 match_count += 1
@@ -160,19 +116,11 @@ df = pd.DataFrame()
 # for i in range(100):
 for i in range(len(perf_df)):
     c_df = locate_image_on_image(perf_df['game_id'][i],
-                                 'engagement',
+                                 'cta',
                                  '_preview.png', prefix='eng_')
     df = pd.concat([df, c_df])
     print(f'Extraction status: {round((i/len(perf_df) * 100), 1)}%')
 
-# save engagement position composition
-df.to_csv('observations/engagement_position.csv', index=False)
+# save cta position composition
+df.to_csv('observations/cta_position.csv', index=False)
 print(f'ended at: {datetime.datetime.now()}')
-
-# df1 = locate_image_on_image('4c3bb41d4f40f39842b7b8d3f536366a',
-#                             'engagement_instruction.png',
-#                             '_preview.png', prefix='eng_', visualize=True)
-
-# df2 = locate_image_on_image('fef95c5e1ee5bc235b56d7c508d3bcd0',
-#                             'engagement_instruction.png',
-#                             '_preview.png', prefix='eng_', visualize=True)
