@@ -44,7 +44,6 @@ def locate_image_on_image(directory: str, locate_image: str, on_image: str,
 
     Returns
     =-----=
-
     last_df: pandas dataframe
         A data frame containing position information
     """

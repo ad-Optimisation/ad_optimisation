@@ -678,3 +678,15 @@
 [2022-11-05 11:45:33,928] [dataCleaner] [__init__] [INFO] --> [
     #####-->    Data cleaner logger for position extraction script    <--#####
 ]
+[2022-11-05 14:12:48,674] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for development environment's runner script    <--#####
+]
+[2022-11-05 14:16:04,907] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for development environment's runner script    <--#####
+]
+[2022-11-05 14:20:33,256] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for development environment's runner script    <--#####
+]
+[2022-11-05 14:22:26,728] [dataCleaner] [__init__] [INFO] --> [
+    #####-->    Data cleaner logger for development environment's runner script    <--#####
+]
