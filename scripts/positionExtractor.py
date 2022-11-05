@@ -63,7 +63,7 @@ def locate_image_on_image(directory: str, locate_image: str, on_image: str,
             print(f'current file name: {filename}')
             if locate_image in filename.lower():
                 if 'mp4' in filename.lower():
-                    continue 
+                    continue
                 locate_image_ = filename
                 print(f'found match: {locate_image_}')
                 match_count += 1
