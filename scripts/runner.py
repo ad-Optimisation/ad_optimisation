@@ -11,7 +11,7 @@ cp -r 'adunit-j&j-listerine-tonicadunit-instagram-bio-mob'
     'adunit-ihop-ihoppy-hour-no-offer-mob' ~/ad_optimization/data/
 
 
-cp -r  "00dfe88c4d3fb60793765d314bf24b7c" ~/ad_optimization/data/
+cp -r  "db69df88f5a7b1540d4ff829bffb97f9" ~/ad_optimization/data/
 """
 
 # # to measure exec time
@@ -78,7 +78,7 @@ from typing import List, Tuple
 from matplotlib import pyplot as plt
 
 
-cleaner = dc.dataCleaner('object extraction script')
+cleaner = dc.dataCleaner("development environment's runner script")
 
 sys.path.append('../observations/')
 sys.path.append('../data/')
@@ -91,39 +91,45 @@ def extract_objects(col: str):
     """
 
 
-def extract_color_feature(directory: str) -> pd.DataFrame:
-    print(f'{APP_FOLDER}{directory}')
-    last_df = pd.DataFrame()
+def locate_image_on_image(directory: str, locate_image: str, on_image: str,
+                          prefix: str = '', visualize: bool = False,
+                          color: Tuple[int, int, int] = (0, 0, 255)):
+
+    last_df = pd.DataFrame(columns=['Assets', 'located_image', 'base_image',
+                                    'top_left_X', 'top_left_Y',
+                                    'bottom_right_X', 'top_right_Y', 'height',
+                                    'width', 'total_image_height',
+                                    'total_image_width'])
+
+    locate_image_ = ''
+    match_count = 0
+    match_count_list = []
     try:
         for filename in os.listdir(f'{APP_FOLDER}{directory}'):
-            f = os.path.join(f'{APP_FOLDER}{directory}', filename)
-            # print('fn:', f)
-            color_df = identify_color_composition(
-                f, tolerance=12, limit=12, visualize=False)
-            color_df['Assets'] = directory
-            color_df['file_name'] = filename
-            last_df = pd.concat([last_df, color_df])
-        return last_df
+            print(f'current file name: {filename}')
+            if locate_image in filename:
+                locate_image_ = filename
+                print(f'found match: {locate_image_}')
+                match_count += 1
+                match_count_list.append(match_count)
+        print(f'total matches found: {match_count}')
+        print(f'total matches list: {match_count_list}\n')
     except Exception as e:
         print(e)
-    finally:
-        return last_df
 
-
-def locate_image_on_image(directory: str, locate_image: str, on_image: str, prefix: str = '',
-                          visualize: bool = False,
-                          color: Tuple[int, int, int] = (0, 0, 255)):
-    last_df = pd.DataFrame()
     try:
         image = cv2.imread(f'{APP_FOLDER}{directory}/{on_image}')
         gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
 
-        template = cv2.imread(f'{APP_FOLDER}{directory}/{locate_image}', 0)
+        template = cv2.imread(f'{APP_FOLDER}{directory}/{locate_image_}', 0)
 
         result = cv2.matchTemplate(gray, template, cv2.TM_CCOEFF)
         _, _, _, max_loc = cv2.minMaxLoc(result)
 
+        # get the locate image size
         height, width = template.shape[:2]
+        # get the total image size
+        image_height, image_width = image.shape[:2]
 
         top_left = max_loc
         bottom_right = (top_left[0] + width, top_left[1] + height)
@@ -135,46 +141,38 @@ def locate_image_on_image(directory: str, locate_image: str, on_image: str, pref
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
             plt.imshow(image)
 
-        print({f'{prefix}top_left_pos': top_left,
-               f'{prefix}bottom_right_pos': bottom_right})
-        print(f'bot left x: {bottom_right[0]} type: {type(bottom_right)}',
-              f'bot left y: {bottom_right[1]} type: {type(bottom_right[1])}')
-
         # create dataframe, add position data and return
-        last_df['Assets'] = directory
-        last_df['located_image'] = locate_image
-        last_df['base_image'] = on_image
-        last_df['top_left_X'] = top_left[0]
-        last_df['top_left_Y'] = top_left[1]
-        last_df['bottom_right_X'] = bottom_right[0]
-        last_df['bottom_right_Y'] = bottom_right[1]
-        last_df['height'] = height
-        last_df['width'] = width
-
-        print(f'df: {last_df}\ntype: {type(last_df)}')
+        last_df.loc[0] = [directory, locate_image_, on_image, top_left[0],
+                          top_left[1], bottom_right[0], bottom_right[1],
+                          height, width, image_height, image_width]
         return last_df
 
     except cv2.error as err:
+        last_df.loc[0] = [directory, locate_image, on_image, 'NA', 'NA', 'NA',
+                          'NA', 'NA', 'NA', 'NA', 'NA']
         print(err)
+        return last_df
 
 
-# print(f'started at: {datetime.datetime.now()}')
-# perf_df = pd.read_csv('data/performance_data.csv')
-# df = pd.DataFrame()
-# for i in range(len(perf_df)):
-#     # for i in range(100):
-#     c_df = extract_objects(perf_df['game_id'][i])
-#     df = pd.concat([df, c_df])
-#     print(f'Extraction status: {round((i/len(perf_df) * 100), 1)}%')
+print(f'started at: {datetime.datetime.now()}')
+perf_df = pd.read_csv('data/performance_data.csv')
+df = pd.DataFrame()
+# for i in range(100):
+for i in range(len(perf_df)):
+    c_df = locate_image_on_image(perf_df['game_id'][i],
+                                 'engagement',
+                                 '_preview.png', prefix='eng_')
+    df = pd.concat([df, c_df])
+    print(f'Extraction status: {round((i/len(perf_df) * 100), 1)}%')
 
-# # save color composition
-# df.to_csv('observations/object_feature.csv', index=False)
-# print(f'ended at: {datetime.datetime.now()}')
+# save engagement position composition
+df.to_csv('observations/engagement_position.csv', index=False)
+print(f'ended at: {datetime.datetime.now()}')
 
-df1 = locate_image_on_image('4c3bb41d4f40f39842b7b8d3f536366a',
-                            'engagement_instruction.png',
-                            '_preview.png', prefix='eng_', visualize=True)
+# df1 = locate_image_on_image('4c3bb41d4f40f39842b7b8d3f536366a',
+#                             'engagement_instruction.png',
+#                             '_preview.png', prefix='eng_', visualize=True)
 
-df2 = locate_image_on_image('fef95c5e1ee5bc235b56d7c508d3bcd0',
-                            'engagement_instruction.png',
-                            '_preview.png', prefix='eng_', visualize=True)
+# df2 = locate_image_on_image('fef95c5e1ee5bc235b56d7c508d3bcd0',
+#                             'engagement_instruction.png',
+#                             '_preview.png', prefix='eng_', visualize=True)
