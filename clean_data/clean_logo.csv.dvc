@@ -1,0 +1,4 @@
+outs:
+- md5: 52b6207484388f9f73d131cff43ddab8
+  size: 65449
+  path: clean_logo.csv
