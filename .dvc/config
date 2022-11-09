@@ -1,4 +1,4 @@
 [core]
-    remote = storage
-['remote "storage"']
-    url = ../remote
+    remote = local-remote
+['remote "local-remote"']
+    url = /home/f0x-tr0t/Documents/dvc-store/
