@@ -34,4 +34,4 @@ jobs:
           echo test, and deploy your project.
       - name: Install requirements
         run: |
-          pip install --ignore-installed -r requirements.txt
+          # pip install --ignore-installed -r requirements.txt
