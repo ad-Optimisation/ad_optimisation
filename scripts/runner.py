@@ -106,4 +106,3 @@ def extract_objects(col: str):
 # # save engagement position composition
 # df.to_csv('observations/engagement_position.csv', index=False)
 # print(f'ended at: {datetime.datetime.now()}')
-

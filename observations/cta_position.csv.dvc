@@ -1,0 +1,4 @@
+outs:
+- md5: 67eb7b405ed18ae97025e99eca9c520a
+  size: 77183
+  path: cta_position.csv

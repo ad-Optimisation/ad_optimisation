@@ -1,7 +1,5 @@
 [core]
-    remote = myremote
+    remote = local-remote
     autostage = true
-['remote "storage"']
-    url = ../remote
-['remote "myremote"']
-    url = gdrive://1NKAanyYzrsLX3IlDbqCmtdm8oXPy577V
+['remote "local-remote"']
+    url = /home/f0x-tr0t/Documents/dvc-store/
