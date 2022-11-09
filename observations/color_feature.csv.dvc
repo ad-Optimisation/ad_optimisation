@@ -1,0 +1,4 @@
+outs:
+- md5: 92d4409a218e474ec7335cc2385cbb64
+  size: 5518610
+  path: color_feature.csv

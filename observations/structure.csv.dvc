@@ -1,0 +1,4 @@
+outs:
+- md5: 03aa5a5303e20ec2819685bef8958409
+  size: 587351
+  path: structure.csv
